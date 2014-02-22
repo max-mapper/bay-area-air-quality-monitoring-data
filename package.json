@@ -1,0 +1,24 @@
+{
+  "name": "bay-area-air-quality-monitoring-data",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxogden/bay-area-air-quality-monitoring-data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxogden/bay-area-air-quality-monitoring-data/issues"
+  },
+  "homepage": "https://github.com/maxogden/bay-area-air-quality-monitoring-data",
+  "dependencies": {
+    "binary-csv": "^0.1.7",
+    "csv-write-stream": "^0.1.1",
+    "request": "^2.34.0",
+    "cheerio": "^0.13.1"
+  }
+}
