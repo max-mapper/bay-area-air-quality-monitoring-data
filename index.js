@@ -13,7 +13,9 @@ var dailyUrl = 'http://gate1.baaqmd.gov/aqmet/AQSiteView.aspx'
 var formData = {
   "__EVENTTARGET": "Calendar",
   "__EVENTARGUMENT": "3347",
-  "__LASTFOCUS": "", "__VIEWSTATE":"/wEPDwUKMTc1NzAzMTk5OQ9kFgJmD2QWBmYPEGQPFgxmAgECAgIDAgQCBQIGAgcCCAIJAgoCCxYMEAUHSmFudWFyeQUBMWcQBQhGZWJydWFyeQUBMmcQBQVNYXJjaAUBM2cQBQVBcHJpbAUBNGcQBQNNYXkFATVnEAUESnVuZQUBNmcQBQRKdWx5BQE3ZxAFBkF1Z3VzdAUBOGcQBQlTZXB0ZW1iZXIFATlnEAUHT2N0b2JlcgUCMTBnEAUITm92ZW1iZXIFAjExZxAFCERlY2VtYmVyBQIxMmcWAQICZAICDxBkDxYLZgIBAgICAwIEAgUCBgIHAggCCQIKFgsQBQQyMDA0BQQyMDA0ZxAFBDIwMDUFBDIwMDVnEAUEMjAwNgUEMjAwNmcQBQQyMDA3BQQyMDA3ZxAFBDIwMDgFBDIwMDhnEAUEMjAwOQUEMjAwOWcQBQQyMDEwBQQyMDEwZxAFBDIwMTEFBDIwMTFnEAUEMjAxMgUEMjAxMmcQBQQyMDEzBQQyMDEzZxAFBDIwMTQFBDIwMTRnFgECBWQCAw88KwAKAQAPFgQeC1Zpc2libGVEYXRlBgBA5/bgaMsIHgJTRBYBBgBA5/bgaMsIZGRkds+xpmLbL3VHP7+P5/Fq8N0BMok=",  "__EVENTVALIDATION":"/wEWRAL3k5DsBgK1mKbEDgK694yqAgK794yqAgK494yqAgK594yqAgK+94yqAgK/94yqAgK894yqAgKt94yqAgKi94yqAgK698ypAgK698CpAgK698SpAgKqyJPNBAKC5u7XCQKC5vpyAoLmxqkPAoLm0sQHAoLm/q0BAoLmysgJAunf+NEOAunfxIwFAunf0KsMAunfvMYEAunfiP0DAuf/qMoFAuf/tJcNAuf/gLAKAuf/7NwDAuf/+PkIAuf/xAIC5//QrwkC5/+8yAYC5//IowMC5//UzAgC2pDG5w8C2pDSgAcC2pC+rQwC2pCK9gUC2pCWkw0C2pDivwoC2pDO2AMC2pDa5QgC2pDm3AUC2pDy+QICvYnkEAK9ifC9CQK9idzGBgK9iajjDwK9ibSMBwK9iYCpDAK9iez1BQK9ifieDQK9iYT2DwK9iZCTBwKQooKKCgKQou7WAwKQovrzCAKQosYcApCi0rkJApCivsIGApCiiu8PApCilogHApCiouMBApCijowJArvIwssDArvIrpQLhu/X5/fQijDlPSmohkVjK4OTI7Y=",
+  "__LASTFOCUS": "",
+  "__VIEWSTATE":"/wEPDwUKMTc1NzAzMTk5OQ9kFgJmD2QWBmYPEGQPFgxmAgECAgIDAgQCBQIGAgcCCAIJAgoCCxYMEAUHSmFudWFyeQUBMWcQBQhGZWJydWFyeQUBMmcQBQVNYXJjaAUBM2cQBQVBcHJpbAUBNGcQBQNNYXkFATVnEAUESnVuZQUBNmcQBQRKdWx5BQE3ZxAFBkF1Z3VzdAUBOGcQBQlTZXB0ZW1iZXIFATlnEAUHT2N0b2JlcgUCMTBnEAUITm92ZW1iZXIFAjExZxAFCERlY2VtYmVyBQIxMmcWAQICZAICDxBkDxYLZgIBAgICAwIEAgUCBgIHAggCCQIKFgsQBQQyMDA0BQQyMDA0ZxAFBDIwMDUFBDIwMDVnEAUEMjAwNgUEMjAwNmcQBQQyMDA3BQQyMDA3ZxAFBDIwMDgFBDIwMDhnEAUEMjAwOQUEMjAwOWcQBQQyMDEwBQQyMDEwZxAFBDIwMTEFBDIwMTFnEAUEMjAxMgUEMjAxMmcQBQQyMDEzBQQyMDEzZxAFBDIwMTQFBDIwMTRnFgECBWQCAw88KwAKAQAPFgQeC1Zpc2libGVEYXRlBgBA5/bgaMsIHgJTRBYBBgBA5/bgaMsIZGRkds+xpmLbL3VHP7+P5/Fq8N0BMok=",
+  "__EVENTVALIDATION":"/wEWRAL3k5DsBgK1mKbEDgK694yqAgK794yqAgK494yqAgK594yqAgK+94yqAgK/94yqAgK894yqAgKt94yqAgKi94yqAgK698ypAgK698CpAgK698SpAgKqyJPNBAKC5u7XCQKC5vpyAoLmxqkPAoLm0sQHAoLm/q0BAoLmysgJAunf+NEOAunfxIwFAunf0KsMAunfvMYEAunfiP0DAuf/qMoFAuf/tJcNAuf/gLAKAuf/7NwDAuf/+PkIAuf/xAIC5//QrwkC5/+8yAYC5//IowMC5//UzAgC2pDG5w8C2pDSgAcC2pC+rQwC2pCK9gUC2pCWkw0C2pDivwoC2pDO2AMC2pDa5QgC2pDm3AUC2pDy+QICvYnkEAK9ifC9CQK9idzGBgK9iajjDwK9ibSMBwK9iYCpDAK9iez1BQK9ifieDQK9iYT2DwK9iZCTBwKQooKKCgKQou7WAwKQovrzCAKQosYcApCi0rkJApCivsIGApCiiu8PApCilogHApCiouMBApCijowJArvIwssDArvIrpQLhu/X5/fQijDlPSmohkVjK4OTI7Y=",
   "DropDownListMonth": "3",
   "DropDownListYear": "2009",
   "SID": "1027"
@@ -29,10 +31,12 @@ var headers = {
 }
 
 request.post({url: dailyUrl, form: formData, headers: headers}, function(err, resp, html) {
+  console.log(resp.statusCode)
   var $ = cheerio.load(html)
   var table = $('table[bgcolor="#CCCCCC"]')
   var rows = $(table).find('tr')
   var hours = $(rows[1]).find('td')
+  var day = $($(rows[0]).find('td')[1]).text()
   
   // delete first two rows and last row -- they are headers
   rows = rows.slice(2)
@@ -40,9 +44,19 @@ request.post({url: dailyUrl, form: formData, headers: headers}, function(err, re
   
   rows.map(function(rowNum, row) {
     var cells = $(row).find('td')
+    var type = $(cells[0]).text().trim()
+    
     cells.map(function(cellNum, cell) {
-      var text = $(cell).text()
-      console.log(text)
+      cell = $(cell)
+      var children = cell.contents()
+      children.map(function(childNum, el) {
+        if (el.type !== 'text') $(el).remove()
+      })
+      var value = cell.text().trim()
+      if (value.length === 0) return
+      
+      var hour = $(hours[cellNum]).text()
+      console.log([type, value, day, hour])
     })
   })
 })
